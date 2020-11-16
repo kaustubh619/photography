@@ -13,7 +13,7 @@
 	<link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}">
 	
 	<!-- Icon -->
-	<link rel="icon" href="{% static 'img/favicon.png' %}" sizes="32x32" />
+	<link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />
 </head>
 <body class="ashade-home-template has-spotlight ashade-smooth-scroll">
     <!-- Header -->
@@ -21,7 +21,7 @@
         <div class="ashade-header-inner">
             <div class="ashade-logo-block">
                 <a href="/" class="ashade-logo is-retina">
-                	<img src="{% static 'img/logo_cropped.png' %}" alt="Ashade Logo" width="248" height="110">
+                	<img src="{% static 'img/logo_sudips.png' %}" alt="Ashade Logo" width="128" height="110">
                 </a>
             </div>
             <div class="ashade-nav-block">
@@ -31,7 +31,7 @@
                             <a href="/">Home</a>
                         </li>
 						<li class="menu-item-has-children">
-                            <a href="#">Works</a>
+                            <a href="/works">Works</a>
                             <!-- <ul class="sub-menu">
                                 <li class="menu-item-has-children">
                                     <a href="#">Ribbon</a>
@@ -76,7 +76,7 @@
                             </ul> -->
                         </li>
 						<li class="menu-item-has-children">
-                            <a href="#">Showcase</a>
+                            <a href="/stories">Stories</a>
                             <!-- <ul class="sub-menu">
                                 <li class="menu-item-has-children">
                                     <a href="#">Grid</a>
@@ -246,123 +246,54 @@
 				<div class="ashade-albums-grid ashade-grid ashade-grid-3cols is-masonry">
 					<div class="ashade-album-item ashade-grid-item">
 						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album01.png' %}" alt="My Special Day">
+							<img src="{% static 'img/photography/bali/10.jpg' %}" alt="Bali">
 						</div>
 						<h5>
-							<span>Wedding Photos</span>
-							My Special Day
+							<span></span>
+							Bali
+							<!-- My Special Day -->
 						</h5>
-						<a href="gallery-slider-parallax.html" class="ashade-album-item__link"></a>
+						<a href="/works-bali" class="ashade-album-item__link"></a>
 					</div><!-- .ashade-album-item -->
 					<div class="ashade-album-item ashade-grid-item">
 						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album02.png' %}" alt="Harley Davidson">
+							<img src="{% static 'img/photography/bhutan/10.jpg' %}" alt="Harley Davidson">
 						</div>
 						<h5>
-							<span>Commercial Photos</span>
-							Harley Davidson
+							<span></span>
+							Bhutan
 						</h5>
-						<a href="gallery-bricks-1x2.html" class="ashade-album-item__link"></a>
+						<a href="/works-bhutan" class="ashade-album-item__link"></a>
 					</div><!-- .ashade-album-item -->
 					<div class="ashade-album-item ashade-grid-item">
 						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album03.png' %}" alt="Together Forever">
+							<img src="{% static 'img/photography/jejuri/10.jpg' %}" alt="Together Forever">
 						</div>
 						<h5>
-							<span>Love Story</span>
-							Together Forever
+							<span></span>
+							Jejuri
 						</h5>
-						<a href="gallery-grid-3columns.html" class="ashade-album-item__link"></a>
+						<a href="/works-jejuri" class="ashade-album-item__link"></a>
 					</div><!-- .ashade-album-item -->
 					<div class="ashade-album-item ashade-grid-item">
 						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album05.png' %}" alt="Sunset Nature">
+							<img src="{% static 'img/photography/purulia/10.jpg' %}" alt="City Tour">
 						</div>
 						<h5>
-							<span>Nature Photos</span>
-							Sunset Nature
+							<span></span>
+							Purulia
 						</h5>
-						<a href="gallery-masonry-4columns.html" class="ashade-album-item__link"></a>
+						<a href="/works-purulia" class="ashade-album-item__link"></a>
 					</div><!-- .ashade-album-item -->
 					<div class="ashade-album-item ashade-grid-item">
 						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album04.png' %}" alt="Girl on Farm">
+							<img src="{% static 'img/photography/cover/Divine_light.jpg' %}" alt="City Tour">
 						</div>
 						<h5>
-							<span>Personal Session</span>
-							Girl on Farm
+							<span></span>
+							Cover
 						</h5>
-						<a href="gallery-ribbon-large.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album06.png' %}" alt="City Tour">
-						</div>
-						<h5>
-							<span>Travel Photos</span>
-							City Tour
-						</h5>
-						<a href="gallery-masonry-3columns.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album08.png' %}" alt="Colors of Nature">
-						</div>
-						<h5>
-							<span>Nature Photos</span>
-							Colors of Nature
-						</h5>
-						<a href="gallery-justified.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album07.png' %}" alt="Auto Showroom">
-						</div>
-						<h5>
-							<span>Commercial Photo</span>
-							Auto Showroom
-						</h5>
-						<a href="gallery-adjusted-3columns.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album09.png' %}" alt="Abandoned">
-						</div>
-						<h5>
-							<span>Travel Photos</span>
-							Abandoned
-						</h5>
-						<a href="gallery-ribbon-medium.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album11.png' %}" alt="Let's Play">
-						</div>
-						<h5>
-							<span>Personal Session</span>
-							Let's Play
-						</h5>
-						<a href="gallery-ribbon-vertical.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album10.png' %}" alt="True Love">
-						</div>
-						<h5>
-							<span>Love Story</span>
-							True Love
-						</h5>
-						<a href="gallery-slider-fade.html" class="ashade-album-item__link"></a>
-					</div><!-- .ashade-album-item -->
-					<div class="ashade-album-item ashade-grid-item">
-						<div class="ashade-album-item__image">
-							<img src="{% static 'img/albums/masonry/album12.png' %}" alt="New Family">
-						</div>
-						<h5>
-							<span>Wedding Photos</span>
-							New Family
-						</h5>
-						<a href="gallery-bricks-2x3.html" class="ashade-album-item__link"></a>
+						<a href="/works-cover" class="ashade-album-item__link"></a>
 					</div><!-- .ashade-album-item -->
 				</div><!-- .ashade-albums-grid -->
 			</div><!-- .ashade-col -->
@@ -388,23 +319,26 @@
 
     <!-- Aside Bar -->
     <aside id="ashade-aside">
-       	<a href="#" class="ashade-aside-close">Close Sidebar</a>
-        <div class="ashade-aside-inner">
-        	<div class="ashade-aside-content">
+		<a href="#" class="ashade-aside-close">Close Sidebar</a>
+		<div class="ashade-aside-inner">
+			<div class="ashade-aside-content">
 				<div class="ashade-widget ashade-widget--about">
 					<div class="ashade-widget--about__head">
 						<img src="{% static 'img/general/owner-avatar.png' %}" alt="Andrew Shade">
 						<h5>
 							<span>Photographer</span>
-							Andrew Shade
+							Sudip Kumar Saha
 						</h5>
 					</div>
-					<p>Nice to meet you, friend! My name is Andrew Shade. I am from Denver. Photography is my passion. Through the lens the world looks different and I would like to show you this difference.</p>
+					<p>Nice to meet you, friend! My name is Sudip Kumar Saha. My association with camera and photography
+						started at a very tender age when I used to fiddle with my father's precious Agfa Box camera.
+						Cameras always fascinated me, enthralled me and enchanted me... the very science behind any
+						object being captured in a film was something which intrigued me very much.</p>
 					<p class="align-right">
 						<a href="/about" class="ashade-learn-more">Learn More</a>
 					</p>
 				</div><!-- .ashade-widget -->
-       			
+
 				<div class="ashade-widget ashade-widget--contacts">
 					<h5 class="ashade-widget-title">
 						<span>My contacts and socials</span>
@@ -417,11 +351,11 @@
 						</li>
 						<li>
 							<i class="ashade-contact-icon la la-phone"></i>
-							<a href="tel:+11234567890">+1 (123) 456 - 78 - 90</a>
+							<a href="tel:+11234567890">+91 98765 12345</a>
 						</li>
 						<li>
 							<i class="ashade-contact-icon la la-envelope"></i>
-							<a href="mailto:a.shade@example.com">a.shade@example.com</a>
+							<a href="mailto:a.shade@example.com">user@gmail.com</a>
 						</li>
 						<li class="ashade-contact-socials">
 							<i class="ashade-contact-icon la la-share-alt"></i>
@@ -435,10 +369,10 @@
 						<a href="/contacts" class="ashade-learn-more">Get in touch</a>
 					</p>
 				</div><!-- .ashade-widget -->
-       			
-        	</div><!-- .ashade-aside-content -->
-        </div><!-- .ashade-aside-inner -->
-    </aside>
+
+			</div><!-- .ashade-aside-content -->
+		</div><!-- .ashade-aside-inner -->
+	</aside>
 
     <!-- UI Elements -->
     <div class="ashade-home-block-overlay"></div>

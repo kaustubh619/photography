@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Works</title>
+    {% load static %}
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/line-awesome.css' %}">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+	<!-- Icon -->
+	<link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />
+</head>
+<body class="has-spotlight ashade-smooth-scroll">
+    <!-- Header -->
+	<header id="ashade-header">
+        <div class="ashade-header-inner">
+            <div class="ashade-logo-block">
+                <a href="/" class="ashade-logo is-retina">
+                	<img src="{% static 'img/logo_sudips.png' %}" alt="Ashade Logo" width="128" height="110">
+                </a>
+            </div>
+            <div class="ashade-nav-block">
+                <nav class="ashade-nav">
+                    <ul class="main-menu">
+                        <li class="menu-item-has-children">
+                            <a href="/">Home</a>
+                        </li>
+						<li class="menu-item-has-children">
+                            <a href="/works">Works</a>
+                            <!-- <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ribbon</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-ribbon-large.html">Ribbon Large</a></li>
+                                        <li><a href="works-ribbon-medium.html">Ribbon Medium</a></li>
+                                        <li><a href="works-ribbon-vertical.html">Ribbon Vertical</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Slider</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-slider-parallax.html">Parallax Slider</a></li>
+                                        <li><a href="works-slider-simple.html">Simple Slider</a></li>
+                                        <li><a href="works-slider-fade.html">Fade Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Grid</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-grid-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-grid-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-grid-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Masonry</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-masonry-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-masonry-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-masonry-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Adjusted</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-adjusted-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-adjusted-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-adjusted-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        </li>
+						<li class="menu-item-has-children">
+                            <a href="/stories">Stories</a>
+                            <!-- <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Grid</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-grid-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-grid-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-grid-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Masonry</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-masonry-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-masonry-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-masonry-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Adjusted</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-adjusted-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-adjusted-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-adjusted-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ribbon</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-ribbon-large.html">Ribbon Large</a></li>
+                                        <li><a href="gallery-ribbon-medium.html">Ribbon Medium</a></li>
+                                        <li><a href="gallery-ribbon-vertical.html">Ribbon Vertical</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Slider</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-slider-parallax.html">Parallax Slider</a></li>
+                                        <li><a href="gallery-slider-simple.html">Simple Slider</a></li>
+                                        <li><a href="gallery-slider-fade.html">Fade Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="gallery-justified.html">Justified</a></li>
+                                <li><a href="gallery-bricks-1x2.html">Bricks 1x2</a></li>
+                                <li><a href="gallery-bricks-2x3.html">Bricks 2x3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/about">About Me</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/testimonials">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contacts">Contacts</a></li>
+                        <li>
+							<a href="#" class="ashade-aside-toggler">
+								<span class="ashade-aside-toggler__icon01"></span>
+								<span class="ashade-aside-toggler__icon02"></span>
+								<span class="ashade-aside-toggler__icon03"></span>
+							</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="ashade-page-title-wrap">
+        <h1 class="ashade-page-title">
+            <span>My</span>
+            Works
+        </h1>
+    </div>
+
+    <main class="ashade-content-wrap">
+		<div class="ashade-content-scroll">
+			<div class="ashade-content">
+				<section class="ashade-section">
+					<div class="ashade-row">
+						<div class="ashade-col col-12">
+							<p class="ashade-intro">Photography is my passion. Through the lens the world looks different and i would like to show you this difference. You can see it in my albums that are presented here.</p>
+						</div>
+					</div>
+				</section>
+				<section class="ashade-section">
+					<div class="ashade-row">
+						<div class="ashade-col col-12">
+							<div class="ashade-albums-grid ashade-grid ashade-grid-2cols is-masonry">
+								<div class="ashade-album-item ashade-grid-item">
+									<div class="ashade-album-item__image">
+										<img src="{% static 'img/photography/bali/10.jpg' %}" alt="My Special Day">
+									</div>
+									<h5>
+										<span></span>
+										Bali
+									</h5>
+									<a href="/works-bali" class="ashade-album-item__link"></a>
+								</div><!-- .ashade-album-item -->
+								<div class="ashade-album-item ashade-grid-item">
+									<div class="ashade-album-item__image">
+										<img src="{% static 'img/photography/bhutan/10.jpg' %}" alt="Harley Davidson">
+									</div>
+									<h5>
+										<span></span>
+										Bhutan
+									</h5>
+									<a href="/works-bhutan" class="ashade-album-item__link"></a>
+								</div><!-- .ashade-album-item -->
+								<div class="ashade-album-item ashade-grid-item">
+									<div class="ashade-album-item__image">
+										<img src="{% static 'img/photography/jejuri/10.jpg' %}" alt="Together Forever">
+									</div>
+									<h5>
+										<span></span>
+										Jejuri
+									</h5>
+									<a href="/works-jejuri" class="ashade-album-item__link"></a>
+								</div><!-- .ashade-album-item -->
+								<div class="ashade-album-item ashade-grid-item">
+									<div class="ashade-album-item__image">
+										<img src="{% static 'img/photography/purulia/10.jpg' %}" alt="City Tour">
+									</div>
+									<h5>
+										<span></span>
+										Purulia
+									</h5>
+									<a href="/works-purulia" class="ashade-album-item__link"></a>
+                                </div><!-- .ashade-album-item -->
+                                <div class="ashade-album-item ashade-grid-item">
+									<div class="ashade-album-item__image">
+										<img src="{% static 'img/photography/cover/Divine_light.jpg' %}" alt="City Tour">
+									</div>
+									<h5>
+										<span></span>
+										Cover
+									</h5>
+									<a href="/works-cover" class="ashade-album-item__link"></a>
+								</div><!-- .ashade-album-item -->
+							</div><!-- .ashade-albums-grid -->
+						</div>
+					</div><!-- .ashade-row -->
+				</section>
+			</div><!-- .ashade-content -->
+			
+			<!-- Footer -->
+			<footer id="ashade-footer">
+				<div class="ashade-footer-inner">
+					<div class="ashade-footer__socials">
+						<ul class="ashade-socials">
+							<li><a href="#">Fb</a></li>
+							<li><a href="#">Tw</a></li>
+							<li><a href="#">In</a></li>
+							<li><a href="#">Yt</a></li>
+						</ul>
+					</div>
+					<div class="ashade-footer__copyright">
+						Copyright &copy; 2020. All Rights Reserved.
+					</div>
+				</div>
+			</footer>
+		</div><!-- .ashade-content-scroll -->
+	</main>
+    
+    <div class="ashade-to-top-wrap ashade-back-wrap">
+        <div class="ashade-back is-to-top">
+            <span>Back to</span>
+            <span>Top</span>
+        </div>
+    </div>
+
+    <!-- Aside Bar -->
+    <aside id="ashade-aside">
+		<a href="#" class="ashade-aside-close">Close Sidebar</a>
+		<div class="ashade-aside-inner">
+			<div class="ashade-aside-content">
+				<div class="ashade-widget ashade-widget--about">
+					<div class="ashade-widget--about__head">
+						<img src="{% static 'img/general/owner-avatar.png' %}" alt="Andrew Shade">
+						<h5>
+							<span>Photographer</span>
+							Sudip Kumar Saha
+						</h5>
+					</div>
+					<p>Nice to meet you, friend! My name is Sudip Kumar Saha. My association with camera and photography
+						started at a very tender age when I used to fiddle with my father's precious Agfa Box camera.
+						Cameras always fascinated me, enthralled me and enchanted me... the very science behind any
+						object being captured in a film was something which intrigued me very much.</p>
+					<p class="align-right">
+						<a href="/about" class="ashade-learn-more">Learn More</a>
+					</p>
+				</div><!-- .ashade-widget -->
+
+				<div class="ashade-widget ashade-widget--contacts">
+					<h5 class="ashade-widget-title">
+						<span>My contacts and socials</span>
+						How to find me
+					</h5>
+					<ul class="ashade-contact-details__list">
+						<li>
+							<i class="ashade-contact-icon la la-map-marker"></i>
+							1250 Welton St, Denver, CO 80204
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-phone"></i>
+							<a href="tel:+11234567890">+91 98765 12345</a>
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-envelope"></i>
+							<a href="mailto:a.shade@example.com">user@gmail.com</a>
+						</li>
+						<li class="ashade-contact-socials">
+							<i class="ashade-contact-icon la la-share-alt"></i>
+							<a href="facebook.com" target="_blank">Fb</a>
+							<a href="twitter.com" target="_blank">Tw</a>
+							<a href="instagram.com" target="_blank">In</a>
+							<a href="500px.com" target="_blank">Px</a>
+						</li>
+					</ul>
+					<p class="align-right">
+						<a href="/contacts" class="ashade-learn-more">Get in touch</a>
+					</p>
+				</div><!-- .ashade-widget -->
+
+			</div><!-- .ashade-aside-content -->
+		</div><!-- .ashade-aside-inner -->
+	</aside>
+
+    <!-- UI Elements -->
+    <div class="ashade-menu-overlay"></div>
+    <div class="ashade-aside-overlay"></div>
+    <div class="ashade-cursor is-inactive">
+    	<span class="ashade-cursor-circle"></span>
+    	<span class="ashade-cursor-slider"></span>
+    	<span class="ashade-cursor-close ashade-cursor-label">Close</span>
+    	<span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/masonry.min.js' %}"></script>
+    <script src="{% static 'js/core.js' %}"></script>
+</body>
+</html>

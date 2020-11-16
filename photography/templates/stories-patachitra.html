@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Patachitra</title>
+    {% load static %}
+    <!-- CSS -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/line-awesome.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    <!-- Icon -->
+    <link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />
+    <style>
+        .ashade-post-content p {
+            text-align: center;
+        }
+
+        .ashade-post-content h6 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body class="has-spotlight ashade-smooth-scroll">
+    <header id="ashade-header">
+        <div class="ashade-header-inner">
+            <div class="ashade-logo-block">
+                <a href="/" class="ashade-logo is-retina">
+                    <img src="{% static 'img/logo_sudips.png' %}" alt="Ashade Logo" width="128" height="110">
+                </a>
+            </div>
+            <div class="ashade-nav-block">
+                <nav class="ashade-nav">
+                    <ul class="main-menu">
+                        <li class="menu-item-has-children">
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/works">Works</a>
+                            <!-- <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ribbon</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-ribbon-large.html">Ribbon Large</a></li>
+                                        <li><a href="works-ribbon-medium.html">Ribbon Medium</a></li>
+                                        <li><a href="works-ribbon-vertical.html">Ribbon Vertical</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Slider</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-slider-parallax.html">Parallax Slider</a></li>
+                                        <li><a href="works-slider-simple.html">Simple Slider</a></li>
+                                        <li><a href="works-slider-fade.html">Fade Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Grid</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-grid-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-grid-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-grid-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Masonry</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-masonry-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-masonry-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-masonry-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Adjusted</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="works-adjusted-2columns.html">2 Columns</a></li>
+                                        <li><a href="works-adjusted-3columns.html">3 Columns</a></li>
+                                        <li><a href="works-adjusted-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="/stories">Stories</a>
+                            <!-- <ul class="sub-menu">
+                                <li class="menu-item-has-children">
+                                    <a href="#">Grid</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-grid-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-grid-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-grid-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Masonry</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-masonry-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-masonry-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-masonry-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Adjusted</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-adjusted-2columns.html">2 Columns</a></li>
+                                        <li><a href="gallery-adjusted-3columns.html">3 Columns</a></li>
+                                        <li><a href="gallery-adjusted-4columns.html">4 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Ribbon</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-ribbon-large.html">Ribbon Large</a></li>
+                                        <li><a href="gallery-ribbon-medium.html">Ribbon Medium</a></li>
+                                        <li><a href="gallery-ribbon-vertical.html">Ribbon Vertical</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#">Slider</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-slider-parallax.html">Parallax Slider</a></li>
+                                        <li><a href="gallery-slider-simple.html">Simple Slider</a></li>
+                                        <li><a href="gallery-slider-fade.html">Fade Slider</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="gallery-justified.html">Justified</a></li>
+                                <li><a href="gallery-bricks-1x2.html">Bricks 1x2</a></li>
+                                <li><a href="gallery-bricks-2x3.html">Bricks 2x3</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/about">About Me</a></li>
+                                <li><a href="/services">Services</a></li>
+                                <li><a href="/testimonials">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contacts">Contacts</a></li>
+                        <li>
+                            <a href="#" class="ashade-aside-toggler">
+                                <span class="ashade-aside-toggler__icon01"></span>
+                                <span class="ashade-aside-toggler__icon02"></span>
+                                <span class="ashade-aside-toggler__icon03"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="ashade-page-title-wrap">
+        <h1 class="ashade-page-title">
+            <span>Patachitra</span>
+            An unique combo of painting & story telling
+        </h1>
+    </div>
+    <main id="post-466"
+        class="ashade-content-wrap post-466 post type-post status-publish format-standard has-post-thumbnail hentry category-news-posts tag-important tag-info tag-news">
+        <div class="ashade-content-scroll" style="transform: translate3d(0px, -400px, 0px);">
+            <div class="ashade-content"
+                style="min-height: 0px; transform: translate(0px, 0px); opacity: 1; padding-top: 0px;">
+                <div class="ashade-row ">
+                    <div class="ashade-col col-12">
+                        <!-- Post Featured Image -->
+                        <!-- Post Content -->
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <p>Patachitra, an ancient folk art of Bengal is an unique combition of painting and
+                                    story telling. The word "Pata" derived from the Sanskrit word "Patta" means cloth
+                                    and "Chitra" means paintings. The painters are called "Patuas". Patuas do not just
+                                    paint, they also sing as they unfurl the painting scroll to show it to the audience.
+                                    These songs are known as Pater Gaan. The songs are of wide variety ranging from
+                                    traditional mythological tales and tribal rituals to stories based on modern Indian
+                                    history and contemporary issues. Patachitra has been mentioned in Puranas, Epics,
+                                    Ancient Literatures and Historical Descriptions. The style of painting is similar to
+                                    the cave paintings of Mohenjodaro, Harappa and Ajanta. 'Patuas' or 'Chitrakars' have
+                                    been referred to in the literary works dating back to more than 2500 years. Some
+                                    researchers opine that 'Patachitra' was originally an art form of the Santhals
+                                    (tribal community). With the growing influence of Buddhism, the Patuas embraced the
+                                    faith. Buddhist kings and monks made extensive use of scroll paintings to preach
+                                    Buddhism and during this time Patachitra probably spread to Bali, Java, Sri-Lanka,
+                                    Malaysia and Tibet. With the Muslim invasions, Islam spread and the Chitrakars
+                                    became followers of Islam. Traditionally the Patuas make effective use of
+                                    eco-friendly colours by collecting them from leaves, fruits, flowers, plants, trees
+                                    and other natural elements. They like to use bright colours on the pata by applying
+                                    bold brush strokes for sending their aesthetic appeal effectively. Not only do these
+                                    inspired individuals paint their scrolls, they also compose a song for each story
+                                    they illustrate. In short they are an unique tribe of folk artistes who are
+                                    painters, lyricists, singers and performers rolled into one.</p>
+                                <p>My interaction with the Potuas happened when I had visited Nayagram, a remote village
+                                    in West Midnapore district of West Bengal, India. I noticed that almost every house
+                                    in this village had at least one poto-artist. I also noticed that with modernization
+                                    they have undergone a vast change to earn their livelihood. They have successfully
+                                    diversified their skills from making just patachitras to lending their art-form on
+                                    designer dresses, decorative show-pieces etc.
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                            <nav class="ashade-post-nav">
+                            </nav>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-1.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>This picture depicts a day in a life of a "Patachitrakar". Here one such
+                                    Patachitrakar with his daughter is shown - singing and narrating a story while
+                                    unfloding the pato painting. As it says that art is passed on from one generation to
+                                    the other,we see his little son, also busy engrossed in creating a patachitra, while
+                                    the lady of the house is preparing the food for family.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-2.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Patachitrakars also love to decorate their houses. This picture shows one such
+                                    beautiful mural adorning the outer wall of a house.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-3.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Patachitra is passed on from father to son. Here we see the children trying to
+                                    master the art, while the father is painting a mural. The noticeable feature is the
+                                    use of the bright pigments which makes these murals so uniquely beautiful.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-4.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>The art of Patchitra being passed down from one generation to the other. This very
+                                    old art form of Bengal's culture is thus still surviving for centuries after
+                                    centuries braving all unfavorable conditions.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-5.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Family of PatoChitrakars.</h6>
+                                <h6>This being the main livelihood, all the members learn the art from a very tender age
+                                    to become an exponent of the art form.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-6.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Women Patachitrakars busy in creating new artwork, while the son is happily playing
+                                    with just a rejected cycle tyre. Patuas are not economically sound and thus cannot
+                                    afford fancy toys for their kids.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-7.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Patachitra is also drawn on various object, including dress materials. Here one such
+                                    PataChitrakar is seen displaying her art in her courtyard with a hope of getting
+                                    some prospective customers.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-8.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Diversification is the key to their existence. Patuas are now painting on other
+                                    objects of home decors.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-9.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>T-Shirt adorned by Pata-art is also hitting the fashion market. Here one just
+                                    artisans is busy in designing a T-Shirt.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-10.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>A beautiful dress material - having pata-art painted on it is just on the finishing
+                                    stage.
+
+
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="ashade-post-featured-image">
+                            <img src="{% static 'img/photography/Patachitra/patachitra-11.jpg' %}" alt="Important News"
+                                style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 5vh; margin-top: 5vh;">
+                        </div>
+                        <div class="ashade-post-content-wrap">
+                            <div class="ashade-post-content">
+                                <h6>Patchitrakar is an example of communal harmony. Though they are Muslim by religion,
+                                    Patachitras are based on Hindu mythological characters. A true exemplification of
+                                    communal harmony exists in this world. In the above picture a Patochitrakar couple
+                                    painting the motif of Lord Sri Krishna, a Hindu God.
+                                </h6>
+                            </div>
+                        </div>
+                    </div><!-- .ashade-col -->
+                </div><!-- .ashade-row -->
+            </div><!-- .ashade-content -->
+            <footer id="ashade-footer" class="ashade-copyright--right ashade-socials--left ashade-socials-state--yes">
+                <div class="ashade-footer-inner">
+                    <div class="ashade-footer__socials">
+                        <ul class="ashade-socials ashade-socials--text">
+
+                            <li style="opacity: 1; transform: translate(0px, 0px);">
+                                <a class="ashade-social--facebook" href="javascript:void(0)" target="_blank">Fb</a>
+                            </li>
+
+                            <li style="opacity: 1; transform: translate(0px, 0px);">
+                                <a class="ashade-social--twitter" href="javascript:void(0)" target="_blank">Tw</a>
+                            </li>
+
+                            <li style="opacity: 1; transform: translate(0px, 0px);">
+                                <a class="ashade-social--youtube" href="javascript:void(0)" target="_blank">Yt</a>
+                            </li>
+
+                            <li style="opacity: 1; transform: translate(0px, 0px);">
+                                <a class="ashade-social--instagram" href="javascript:void(0)" target="_blank">In</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ashade-footer__copyright" style="opacity: 1; transform: translate(0px, 0px);">
+                        Copyright © 2020. All Rights Reserved. </div>
+                </div>
+            </footer>
+        </div><!-- .ashade-content-scroll -->
+    </main>
+    <!-- Back to Top -->
+    <div class="ashade-to-top-wrap ashade-back-wrap is-loaded" style="top: 100%;">
+        <div class="ashade-back is-to-top">
+            <span>Back to</span>
+            <span>Top</span>
+        </div>
+    </div>
+
+    <aside id="ashade-aside">
+		<a href="#" class="ashade-aside-close">Close Sidebar</a>
+		<div class="ashade-aside-inner">
+			<div class="ashade-aside-content">
+				<div class="ashade-widget ashade-widget--about">
+					<div class="ashade-widget--about__head">
+						<img src="{% static 'img/general/owner-avatar.png' %}" alt="Andrew Shade">
+						<h5>
+							<span>Photographer</span>
+							Sudip Kumar Saha
+						</h5>
+					</div>
+					<p>Nice to meet you, friend! My name is Sudip Kumar Saha. My association with camera and photography
+						started at a very tender age when I used to fiddle with my father's precious Agfa Box camera.
+						Cameras always fascinated me, enthralled me and enchanted me... the very science behind any
+						object being captured in a film was something which intrigued me very much.</p>
+					<p class="align-right">
+						<a href="/about" class="ashade-learn-more">Learn More</a>
+					</p>
+				</div><!-- .ashade-widget -->
+
+				<div class="ashade-widget ashade-widget--contacts">
+					<h5 class="ashade-widget-title">
+						<span>My contacts and socials</span>
+						How to find me
+					</h5>
+					<ul class="ashade-contact-details__list">
+						<li>
+							<i class="ashade-contact-icon la la-map-marker"></i>
+							1250 Welton St, Denver, CO 80204
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-phone"></i>
+							<a href="tel:+11234567890">+91 98765 12345</a>
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-envelope"></i>
+							<a href="mailto:a.shade@example.com">user@gmail.com</a>
+						</li>
+						<li class="ashade-contact-socials">
+							<i class="ashade-contact-icon la la-share-alt"></i>
+							<a href="facebook.com" target="_blank">Fb</a>
+							<a href="twitter.com" target="_blank">Tw</a>
+							<a href="instagram.com" target="_blank">In</a>
+							<a href="500px.com" target="_blank">Px</a>
+						</li>
+					</ul>
+					<p class="align-right">
+						<a href="/contacts" class="ashade-learn-more">Get in touch</a>
+					</p>
+				</div><!-- .ashade-widget -->
+
+			</div><!-- .ashade-aside-content -->
+		</div><!-- .ashade-aside-inner -->
+	</aside>
+
+    <div class="ashade-menu-overlay"></div>
+    <div class="ashade-aside-overlay"></div>
+    <div class="ashade-cursor is-inactive">
+        <span class="ashade-cursor-circle"></span>
+        <span class="ashade-cursor-slider"></span>
+        <span class="ashade-cursor-close ashade-cursor-label">Close</span>
+        <span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/masonry.min.js' %}"></script>
+    <script src="{% static 'js/core.js' %}"></script>
+</body>
+
+</html>

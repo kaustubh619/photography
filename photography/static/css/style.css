@@ -1925,7 +1925,7 @@ body.ashade-aside-shown .ashade-home-link-wrap {
 }
 .ashade-albums-slider .ashade-album-item .ashade-album-item__image {
 	background: no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	position: absolute;
 	top: 0;
 	left: 0;

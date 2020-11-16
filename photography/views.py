@@ -18,4 +18,40 @@ def testimonials(request):
 
 
 def contacts(request):
-    return render(request, 'contacts.html')    
+    return render(request, 'contacts.html')
+
+
+def works(request):
+    return render(request, 'works.html')
+
+
+def works_bali(request):
+    return render(request, 'works-bali.html')
+
+
+def works_bhutan(request):
+    return render(request, 'works-bhutan.html')
+
+
+def works_jejuri(request):
+    return render(request, 'works-jejuri.html')  
+
+
+def works_purulia(request):
+    return render(request, 'works-purulia.html')
+
+
+def works_cover(request):
+    return render(request, 'works-cover.html')    
+
+
+def stories(request):
+    return render(request, 'stories.html')        
+
+
+def stories_konyak(request):
+    return render(request, 'stories-konyak.html')
+
+
+def stories_patachitra(request):
+    return render(request, 'stories-patachitra.html')        
