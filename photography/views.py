@@ -41,8 +41,8 @@ def works_purulia(request):
     return render(request, 'works-purulia.html')
 
 
-def works_cover(request):
-    return render(request, 'works-cover.html')    
+# def works_cover(request):
+#     return render(request, 'works-cover.html')
 
 
 def stories(request):
