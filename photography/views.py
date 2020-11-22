@@ -55,3 +55,7 @@ def stories_konyak(request):
 
 def stories_patachitra(request):
     return render(request, 'stories-patachitra.html')
+
+
+def gallery(request):
+    return render(request, 'gallery.html')    

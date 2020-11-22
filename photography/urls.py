@@ -4,8 +4,8 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('about', views.about),
-    path('services', views.services),
-    path('testimonials', views.testimonials),
+    # path('services', views.services),
+    # path('testimonials', views.testimonials),
     path('contacts', views.contacts),
     path('works', views.works),
     path('works-bali', views.works_bali),
@@ -15,6 +15,7 @@ urlpatterns = [
     # path('works-cover', views.works_cover),
     path('stories', views.stories),
     path('stories-konyak', views.stories_konyak),
-    path('stories-patachitra', views.stories_patachitra)
+    path('stories-patachitra', views.stories_patachitra),
+    path('gallery', views.gallery)
 ]
 

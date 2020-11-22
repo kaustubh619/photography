@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Services</title>
-    {% load static %}
-    <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Services</title>
+	{% load static %}
+	<!-- CSS -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap"
+		rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/line-awesome.css' %}">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}">
@@ -15,163 +18,79 @@
 	<!-- Icon -->
 	<link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />
 </head>
+
 <body class="has-spotlight ashade-smooth-scroll">
-    <!-- Header -->
+	<!-- Header -->
 	<header id="ashade-header">
-        <div class="ashade-header-inner">
-            <div class="ashade-logo-block">
-                <a href="/" class="ashade-logo is-retina">
-                	<img src="{% static 'img/logo_sudips.png' %}" alt="Ashade Logo" width="128" height="110">
-                </a>
-            </div>
-            <div class="ashade-nav-block">
-                <nav class="ashade-nav">
-                    <ul class="main-menu">
-                        <li class="menu-item-has-children">
-                            <a href="/">Home</a>
-                        </li>
+		<div class="ashade-header-inner">
+			<div class="ashade-logo-block">
+				<a href="/" class="ashade-logo is-retina">
+					<img src="{% static 'img/logo_sudips.png' %}" alt="Ashade Logo" width="128" height="110">
+				</a>
+			</div>
+			<div class="ashade-nav-block">
+				<nav class="ashade-nav">
+					<ul class="main-menu">
 						<li class="menu-item-has-children">
-                            <a href="/works">Works</a>
-                            <!-- <ul class="sub-menu">
-                                <li class="menu-item-has-children">
-                                    <a href="#">Ribbon</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-ribbon-large.html">Ribbon Large</a></li>
-                                        <li><a href="works-ribbon-medium.html">Ribbon Medium</a></li>
-                                        <li><a href="works-ribbon-vertical.html">Ribbon Vertical</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Slider</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-slider-parallax.html">Parallax Slider</a></li>
-                                        <li><a href="works-slider-simple.html">Simple Slider</a></li>
-                                        <li><a href="works-slider-fade.html">Fade Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Grid</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-grid-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-grid-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-grid-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Masonry</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-masonry-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-masonry-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-masonry-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Adjusted</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-adjusted-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-adjusted-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-adjusted-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                            </ul> -->
-                        </li>
+							<a href="/">Home</a>
+						</li>
 						<li class="menu-item-has-children">
-                            <a href="/stories">Stories</a>
-                            <!-- <ul class="sub-menu">
-                                <li class="menu-item-has-children">
-                                    <a href="#">Grid</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-grid-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-grid-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-grid-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Masonry</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-masonry-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-masonry-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-masonry-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Adjusted</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-adjusted-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-adjusted-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-adjusted-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Ribbon</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-ribbon-large.html">Ribbon Large</a></li>
-                                        <li><a href="gallery-ribbon-medium.html">Ribbon Medium</a></li>
-                                        <li><a href="gallery-ribbon-vertical.html">Ribbon Vertical</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Slider</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-slider-parallax.html">Parallax Slider</a></li>
-                                        <li><a href="gallery-slider-simple.html">Simple Slider</a></li>
-                                        <li><a href="gallery-slider-fade.html">Fade Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="gallery-justified.html">Justified</a></li>
-                                <li><a href="gallery-bricks-1x2.html">Bricks 1x2</a></li>
-                                <li><a href="gallery-bricks-2x3.html">Bricks 2x3</a></li>
-                            </ul> -->
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="/about">About Me</a></li>
-                                <li class="current-menu-item"><a href="/services">Services</a></li>
-                                <li><a href="/testimonials">Testimonials</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="/contacts">Contacts</a></li>
-                        <li>
+							<a href="/works">Around The World</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="/stories">Photo Stories</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="/gallery">Gallery</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="/about">About Me</a>
+						</li>
+						<li><a href="/contacts">Contacts</a></li>
+						<li>
 							<a href="#" class="ashade-aside-toggler">
 								<span class="ashade-aside-toggler__icon01"></span>
 								<span class="ashade-aside-toggler__icon02"></span>
 								<span class="ashade-aside-toggler__icon03"></span>
 							</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-    <!-- Content -->
-    <div class="ashade-page-title-wrap">
-        <h1 class="ashade-page-title">
-            <span>What I'm offering</span>
-            My Services
-        </h1>
-    </div>
+	<!-- Content -->
+	<div class="ashade-page-title-wrap">
+		<h1 class="ashade-page-title">
+			<span>What I'm offering</span>
+			My Services
+		</h1>
+	</div>
 
-    <main class="ashade-content-wrap">
+	<main class="ashade-content-wrap">
 		<div class="ashade-content-scroll">
 			<div class="ashade-content">
 				<section class="ashade-section">
 					<div class="ashade-row">
 						<div class="ashade-col col-12">
-							<p class="ashade-intro">I offer my clients a wide range of services in various directions. Someone thinks that a professional photographer should be focused on one type of photography, but for my practice I have gained enough experience to feel confident in several different directions.</p>
+							<p class="ashade-intro">I offer my clients a wide range of services in various directions.
+								Someone thinks that a professional photographer should be focused on one type of
+								photography, but for my practice I have gained enough experience to feel confident in
+								several different directions.</p>
 						</div>
 					</div><!-- .ashade-row -->
 				</section>
-				
+
 				<section class="ashade-section">
 					<div class="ashade-row">
-                        <div class="ashade-col col-12">
+						<div class="ashade-col col-12">
 							<div class="ashade-service-card-grid">
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-personal.png' %}" alt="Personal Session">
+											<img src="{% static 'img/services/thmb-personal.png' %}"
+												alt="Personal Session">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -181,16 +100,21 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>If you are a beginner model and you do not have portfolio of enough quality so this service is for you. Together we can create you professional models portfolio. The work takes place both in the studio and in nature, depending on the wishes of the client.</p>
+										<p>If you are a beginner model and you do not have portfolio of enough quality
+											so this service is for you. Together we can create you professional models
+											portfolio. The work takes place both in the studio and in nature, depending
+											on the wishes of the client.</p>
 										<div class="align-right">
-											<a href="gallery-ribbon-vertical.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-ribbon-vertical.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-wedding.png' %}" alt="Wedding Photography">
+											<img src="{% static 'img/services/thmb-wedding.png' %}"
+												alt="Wedding Photography">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -200,16 +124,21 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>Marriage is one of the most important and emotional events in our life. Therefore, choosing a photographer for this purpose should be approached very responsibly. I have a lot of experience to working on weddings and don't miss anything.</p>
+										<p>Marriage is one of the most important and emotional events in our life.
+											Therefore, choosing a photographer for this purpose should be approached
+											very responsibly. I have a lot of experience to working on weddings and
+											don't miss anything.</p>
 										<div class="align-right">
-											<a href="gallery-slider-parallax.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-slider-parallax.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-lovestory.png' %}" alt="Your Love Story">
+											<img src="{% static 'img/services/thmb-lovestory.png' %}"
+												alt="Your Love Story">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -219,16 +148,21 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>If you are a beginner model and you do not have portfolio of enough quality so this service is for you. Together we can create you professional models portfolio. The work takes place both in the studio and in nature, depending on the wishes of the client. </p>
+										<p>If you are a beginner model and you do not have portfolio of enough quality
+											so this service is for you. Together we can create you professional models
+											portfolio. The work takes place both in the studio and in nature, depending
+											on the wishes of the client. </p>
 										<div class="align-right">
-											<a href="gallery-grid-3columns.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-grid-3columns.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-commercial.png' %}" alt="Commercial Photos">
+											<img src="{% static 'img/services/thmb-commercial.png' %}"
+												alt="Commercial Photos">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -238,16 +172,21 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>If we are talking about high-quality promotional photos, then you can not talk about savings, but you need to approach the matter with all responsibility and seriousness. After all, future sales directly depend on the quality of the finished photos.</p>
+										<p>If we are talking about high-quality promotional photos, then you can not
+											talk about savings, but you need to approach the matter with all
+											responsibility and seriousness. After all, future sales directly depend on
+											the quality of the finished photos.</p>
 										<div class="align-right">
-											<a href="gallery-adjusted-3columns.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-adjusted-3columns.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-nature.png' %}" alt="Nature Photography">
+											<img src="{% static 'img/services/thmb-nature.png' %}"
+												alt="Nature Photography">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -257,16 +196,21 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>Travelling is my passion. I have a lot of travels around the world and got hundreds perfect photos of nature from different corners of the Earth. So if you looking for perfect photos of our mother nature for your needs - you are on the right way!</p>
+										<p>Travelling is my passion. I have a lot of travels around the world and got
+											hundreds perfect photos of nature from different corners of the Earth. So if
+											you looking for perfect photos of our mother nature for your needs - you are
+											on the right way!</p>
 										<div class="align-right">
-											<a href="gallery-masonry-4columns.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-masonry-4columns.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 								<div class="ashade-service-card">
 									<div class="ashade-service-card__head">
 										<div class="ashade-service-card__image">
-											<img src="{% static 'img/services/thmb-travel.png' %}" alt="Travel Photography">
+											<img src="{% static 'img/services/thmb-travel.png' %}"
+												alt="Travel Photography">
 										</div>
 										<div class="ashade-service-card__label">
 											<h4>
@@ -276,24 +220,28 @@
 										</div>
 									</div><!-- .ashade-service-card__head -->
 									<div class="ashade-service-card__content">
-										<p>My thirst for travel is no less than my love for photography. And it’s wonderful when one passion can complement another. I travel a lot around the most beautiful corners of our planet, and in my collection there are a lot of interesting photos.</p>
+										<p>My thirst for travel is no less than my love for photography. And it’s
+											wonderful when one passion can complement another. I travel a lot around the
+											most beautiful corners of our planet, and in my collection there are a lot
+											of interesting photos.</p>
 										<div class="align-right">
-											<a href="gallery-ribbon-medium.html" class="ashade-learn-more">Explore Works</a>
+											<a href="gallery-ribbon-medium.html" class="ashade-learn-more">Explore
+												Works</a>
 										</div>
 									</div>
 								</div><!-- .ashade-service-card -->
 							</div><!-- .ashade-service-card-grid -->
-                        </div><!-- .ashade-col -->
-                    </div><!-- .ashade-row -->
+						</div><!-- .ashade-col -->
+					</div><!-- .ashade-row -->
 				</section>
-				
+
 				<section class="ashade-section">
 					<div class="ashade-row">
-                        <div class="ashade-col col-12 align-center">
-                        	<h3>
-                        		<span>According to Successfully Projects</span>
-                        		My Skills Level
-                        	</h3>
+						<div class="ashade-col col-12 align-center">
+							<h3>
+								<span>According to Successfully Projects</span>
+								My Skills Level
+							</h3>
 							<div class="ashade-row ashade-keep-on-tablet">
 								<div class="ashade-col col-3">
 									<div class="ashade-progress-item" data-delay="3000" data-percent="92">
@@ -316,67 +264,67 @@
 									</div>
 								</div><!-- .ashade-col -->
 							</div><!-- .ashade-row -->
-                        </div><!-- .ashade-col -->
-                    </div><!-- .ashade-row -->
+						</div><!-- .ashade-col -->
+					</div><!-- .ashade-row -->
 				</section>
-				
+
 				<section class="ashade-section">
 					<div class="ashade-row">
-                        <div class="ashade-col col-4">
-                            <div class="ashade-contact-details">
-                                <h4 class="ashade-contact-details__title">
-                                    <span>My Contacts and Socials</span>
-                                    How to Find Me
-                                </h4>
-                                <ul class="ashade-contact-details__list">
-                                    <li>
-                                        <i class="ashade-contact-icon la la-map-marker"></i>
-                                        1250 Welton St, Denver, CO 80204
-                                    </li>
-                                    <li>
-                                        <i class="ashade-contact-icon la la-phone"></i>
-                                        <a href="tel:+11234567890">+1 (123) 456 - 78 - 90</a>
-                                    </li>
-                                    <li>
-                                        <i class="ashade-contact-icon la la-envelope"></i>
-                                        <a href="mailto:a.shade@example.com">a.shade@example.com</a>
-                                    </li>
-                                    <li class="ashade-contact-socials">
-                                        <i class="ashade-contact-icon la la-share-alt"></i>
-                                        <a href="facebook.com" target="_blank">Fb</a>
-                                        <a href="twitter.com" target="_blank">Tw</a>
-                                        <a href="instagram.com" target="_blank">In</a>
-                                        <a href="500px.com" target="_blank">Px</a>
-                                    </li>
-                                </ul>
-                            </div><!-- .ashade-contact-details -->
-                        </div><!-- .ashade-col -->
-                        <div class="ashade-col col-8">
-                            <form action="mail.php" method="post" class="ashade-contact-form">
-                                <div class="ashade-row ashade-small-gap">
-                                    <div class="ashade-col col-4">
-                                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="ashade-col col-4">
-                                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="ashade-col col-4">
-                                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
-                                    </div>
-                                </div>
-                                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-                                <div class="ashade-contact-form__footer">
+						<div class="ashade-col col-4">
+							<div class="ashade-contact-details">
+								<h4 class="ashade-contact-details__title">
+									<span>My Contacts and Socials</span>
+									How to Find Me
+								</h4>
+								<ul class="ashade-contact-details__list">
+									<li>
+										<i class="ashade-contact-icon la la-map-marker"></i>
+										1250 Welton St, Denver, CO 80204
+									</li>
+									<li>
+										<i class="ashade-contact-icon la la-phone"></i>
+										<a href="tel:+11234567890">+1 (123) 456 - 78 - 90</a>
+									</li>
+									<li>
+										<i class="ashade-contact-icon la la-envelope"></i>
+										<a href="mailto:a.shade@example.com">a.shade@example.com</a>
+									</li>
+									<li class="ashade-contact-socials">
+										<i class="ashade-contact-icon la la-share-alt"></i>
+										<a href="facebook.com" target="_blank">Fb</a>
+										<a href="twitter.com" target="_blank">Tw</a>
+										<a href="instagram.com" target="_blank">In</a>
+										<a href="500px.com" target="_blank">Px</a>
+									</li>
+								</ul>
+							</div><!-- .ashade-contact-details -->
+						</div><!-- .ashade-col -->
+						<div class="ashade-col col-8">
+							<form action="mail.php" method="post" class="ashade-contact-form">
+								<div class="ashade-row ashade-small-gap">
+									<div class="ashade-col col-4">
+										<input type="text" id="name" name="name" placeholder="Your Name" required>
+									</div>
+									<div class="ashade-col col-4">
+										<input type="email" id="email" name="email" placeholder="Your Email" required>
+									</div>
+									<div class="ashade-col col-4">
+										<input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+									</div>
+								</div>
+								<textarea name="message" id="message" placeholder="Your Message" required></textarea>
+								<div class="ashade-contact-form__footer">
 									<div class="ashade-contact-form__response"></div>
 									<div class="ashade-contact-form__submit">
 										<input type="submit" value="Send Message">
 									</div>
-                                </div>
-                            </form>
-                        </div><!-- .ashade-col -->
-                    </div><!-- .ashade-row -->
+								</div>
+							</form>
+						</div><!-- .ashade-col -->
+					</div><!-- .ashade-row -->
 				</section>
 			</div><!-- .ashade-content -->
-			
+
 			<!-- Footer -->
 			<footer id="ashade-footer">
 				<div class="ashade-footer-inner">
@@ -395,16 +343,16 @@
 			</footer>
 		</div><!-- .ashade-content-scroll -->
 	</main>
-    
-    <div class="ashade-to-top-wrap ashade-back-wrap">
-        <div class="ashade-back is-to-top">
-            <span>Back to</span>
-            <span>Top</span>
-        </div>
-    </div>
 
-    <!-- Aside Bar -->
-    <aside id="ashade-aside">
+	<div class="ashade-to-top-wrap ashade-back-wrap">
+		<div class="ashade-back is-to-top">
+			<span>Back to</span>
+			<span>Top</span>
+		</div>
+	</div>
+
+	<!-- Aside Bar -->
+	<aside id="ashade-aside">
 		<a href="#" class="ashade-aside-close">Close Sidebar</a>
 		<div class="ashade-aside-inner">
 			<div class="ashade-aside-content">
@@ -460,19 +408,20 @@
 		</div><!-- .ashade-aside-inner -->
 	</aside>
 
-    <!-- UI Elements -->
-    <div class="ashade-menu-overlay"></div>
-    <div class="ashade-aside-overlay"></div>
-    <div class="ashade-cursor is-inactive">
-    	<span class="ashade-cursor-circle"></span>
-    	<span class="ashade-cursor-slider"></span>
-    	<span class="ashade-cursor-close ashade-cursor-label">Close</span>
-    	<span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
-    </div>
+	<!-- UI Elements -->
+	<div class="ashade-menu-overlay"></div>
+	<div class="ashade-aside-overlay"></div>
+	<div class="ashade-cursor is-inactive">
+		<span class="ashade-cursor-circle"></span>
+		<span class="ashade-cursor-slider"></span>
+		<span class="ashade-cursor-close ashade-cursor-label">Close</span>
+		<span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
+	</div>
 
-    <!-- SCRIPTS -->
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/gsap.min.js' %}"></script>
-    <script src="{% static 'js/core.js' %}"></script>
+	<!-- SCRIPTS -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/gsap.min.js' %}"></script>
+	<script src="{% static 'js/core.js' %}"></script>
 </body>
+
 </html>
