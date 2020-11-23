@@ -59,3 +59,15 @@ def stories_patachitra(request):
 
 def gallery(request):
     return render(request, 'gallery.html')    
+
+
+def gallery_festival(request):
+    return render(request, 'gallery-festival.html')
+
+
+def gallery_mood(request):
+    return render(request, 'gallery-mood.html')
+
+
+def gallery_wall_art(request):
+    return render(request, 'gallery-wall_art.html')            

@@ -16,6 +16,9 @@ urlpatterns = [
     path('stories', views.stories),
     path('stories-konyak', views.stories_konyak),
     path('stories-patachitra', views.stories_patachitra),
-    path('gallery', views.gallery)
+    path('gallery', views.gallery),
+    path('gallery-festival', views.gallery_festival),
+    path('gallery-mood', views.gallery_mood),
+    path('gallery-wall_art', views.gallery_wall_art)
 ]
 
