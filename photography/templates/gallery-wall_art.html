@@ -12,14 +12,21 @@
         href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap"
         rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="{% static 'css/line-awesome.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/photoswipe.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/default-skin/default-skin.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
     <link type="text/css" rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
     <!-- Icon -->
-    <link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />
+    <link rel="icon" href="{% static 'img/logo_sudips.png' %}" sizes="32x32" />\
+    <style>
+        .pswp__img {
+            object-fit: contain !important;
+        }
+    </style>
 </head>
 
-<body class="has-spotlight ashade-albums-template ashade-albums-template--slider">
+<body class="has-spotlight ashade-smooth-scroll">
     <!-- Header -->
     <header id="ashade-header">
         <div class="ashade-header-inner">
@@ -61,94 +68,137 @@
     </header>
 
     <!-- Content -->
+
     <div class="ashade-page-title-wrap">
         <h1 class="ashade-page-title">
             <span>Gallery</span>
             Wall Arts
         </h1>
     </div>
+    <main class="ashade-content-wrap">
+        <div class="ashade-content-scroll">
+            <div class="ashade-content">
+                <!-- <section class="ashade-section">
+                    <div class="ashade-row">
+                        <div class="ashade-col col-12">
+                            <p class="ashade-intro">The birth of a new family is truly an exciting and touching moment.
+                                It was a
+                                great pleasure for me to help these beautiful people capture these wonderful moments of
+                                their
+                                lives.</p>
+                        </div>
+                    </div>
+                </section> -->
+                <section class="ashade-section">
+                    <div class="ashade-gallery-bricks is-2x3">
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/6.webp' %}" class="ashade-lightbox-link"
+                                data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/6.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/6.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC_5302.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC_5302.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_5302.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC_6957.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC_6957.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_6957.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC_7022.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC_7022.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_7022.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC00684.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC00684.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC00684.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC00709.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC00709.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC00709.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC01035.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC01035.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC01035.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC05554.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC05554.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC05554.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/MooWall_Artds/DSC05642.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC05642.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC05642.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                        <div class="ashade-gallery-item">
+                            <a href="{% static 'img/photo-gallery/Wall_Art/DSC06318.webp' %}"
+                                class="ashade-lightbox-link" data-size="1800x1200">
+                                <img src="{% static 'img/photo-gallery/Wall_Art/DSC06318.webp' %}"
+                                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC06318.webp' %}" alt="New Family"
+                                    class="lazy" width="1800" height="1200" style="object-fit: contain;">
+                            </a>
+                        </div><!-- .ashade-gallery-item -->
+                    </div>
+                </section>
+            </div><!-- .ashade-content -->
 
-    <div class="ashade-albums-slider-wrap">
-        <div class="ashade-albums-slider is-parallax" id="albums_slider">
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image" data-src="{% static 'img/photo-gallery/Wall_Art/6.webp' %}">
+            <!-- Footer -->
+            <footer id="ashade-footer">
+                <div class="ashade-footer-inner">
+                    <div class="ashade-footer__socials">
+                        <ul class="ashade-socials">
+                            <li><a target="_blank" href="https://www.facebook.com/sudip.kumar.saha">Fb</a></li>
+                            <li><a target="_blank" href="https://twitter.com/SudipSa70532885">Tw</a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/sudip07saha/">In</a></li>
+                        </ul>
+                    </div>
+                    <div class="ashade-footer__copyright">
+                        Copyright &copy; 2020. All Rights Reserved.
+                    </div>
                 </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_5302.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_6957.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC_7022.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC00684.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC00709.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC01035.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC05554.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC05642.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-            <div class="ashade-album-item">
-                <div class="ashade-album-item__image"
-                    data-src="{% static 'img/photo-gallery/Wall_Art/DSC06318.webp' %}">
-                </div>
-                <div class="ashade-album-item__overlay"></div>
-            </div><!-- .ashade-album-item -->
-        </div><!-- .ashade-albums-slider -->
-        <a href="#" class="ashade-slider-prev">Prev</a>
-        <a href="#" class="ashade-slider-next">Next</a>
-    </div><!-- .ashade-albums-slider-wrap -->
-
-    <!-- Footer -->
-    <footer id="ashade-footer">
-        <div class="ashade-footer-inner">
-            <div class="ashade-footer__socials">
-                <ul class="ashade-socials">
-                    <li><a target="_blank" href="https://www.facebook.com/sudip.kumar.saha">Fb</a></li>
-                    <li><a target="_blank" href="https://twitter.com/SudipSa70532885">Tw</a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/sudip07saha/">In</a></li>
-                </ul>
-            </div>
-            <div class="ashade-footer__copyright">
-                Copyright &copy; 2020. All Rights Reserved.
-            </div>
+            </footer>
         </div>
-    </footer>
+    </main>
+
+    <div class="ashade-to-top-wrap ashade-back-wrap">
+        <div class="ashade-back is-to-top">
+            <span>Back to</span>
+            <span>Top</span>
+        </div>
+    </div>
 
     <!-- Aside Bar -->
     <aside id="ashade-aside">
@@ -218,9 +268,12 @@
 
     <!-- SCRIPTS -->
     <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/masonry.min.js' %}"></script>
     <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.lazy.min.js' %}"></script>
+    <script src="{% static 'js/photoswipe.min.js' %}"></script>
+    <script src="{% static 'js/photoswipe-ui-default.min.js' %}"></script>
     <script src="{% static 'js/core.js' %}"></script>
-    <script src="{% static 'js/ashade-slider.js' %}"></script>
 </body>
 
 </html>
