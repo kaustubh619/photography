@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '25h%!1&tz^&_t*w&w7&sp_w_dw@t-0-$e-*a+1g$cpzevzzi!!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['164.68.113.249', 'sudipsahaphotography.com', 'www.sudipsahaphotography.com']
 
