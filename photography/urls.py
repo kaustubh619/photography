@@ -11,8 +11,6 @@ urlpatterns = [
     path('works', views.works),
     path('works-bali', views.works_bali),
     path('works-bhutan', views.works_bhutan),
-    path('works-jejuri', views.works_jejuri),
-    path('works-purulia', views.works_purulia),
     # path('works-cover', views.works_cover),
     path('stories', views.stories),
     path('stories-konyak', views.stories_konyak),
@@ -20,6 +18,9 @@ urlpatterns = [
     path('gallery', views.gallery),
     path('gallery-festival', views.gallery_festival),
     path('gallery-mood', views.gallery_mood),
-    path('gallery-wall_art', views.gallery_wall_art)
+    path('gallery-wall_art', views.gallery_wall_art),
+    path('picture-perfect-india', views.picture_perfect_india),
+    path('picture-perfect-india-jejuri', views.picture_perfect_india_jejuri),
+    path('picture-perfect-india-purulia', views.picture_perfect_india_purulia),
 ]
 

@@ -46,14 +46,6 @@ def works_bhutan(request):
     return render(request, 'works-bhutan.html')
 
 
-def works_jejuri(request):
-    return render(request, 'works-jejuri.html')  
-
-
-def works_purulia(request):
-    return render(request, 'works-purulia.html')
-
-
 # def works_cover(request):
 #     return render(request, 'works-cover.html')
 
@@ -83,4 +75,16 @@ def gallery_mood(request):
 
 
 def gallery_wall_art(request):
-    return render(request, 'gallery-wall_art.html')            
+    return render(request, 'gallery-wall_art.html')
+
+
+def picture_perfect_india(request):
+    return render(request, 'picture-perfect-india.html')
+
+
+def picture_perfect_india_jejuri(request):
+    return render(request, 'picture-perfect-india-jejuri.html')  
+
+
+def picture_perfect_india_purulia(request):
+    return render(request, 'picture-perfect-india-purulia.html')    
