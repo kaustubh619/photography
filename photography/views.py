@@ -1,6 +1,19 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from django.core.mail import send_mail
+from django.conf import settings
 
 # Create your views here.
+def send_message(request):
+    if request.POST.get('email'):
+        mail_subject = "Sudip Saha Photography"
+        message = "Name - " + str(request.POST.get('name')) + ", Phone - " + str(request.POST.get('phone')) + ", Email - " + str(request.POST.get('email')) + ", \nMessage - " + str(request.POST.get('message'))
+        to_email = "sudip07saha@gmail.com"
+        to_list = [to_email]
+        from_email = settings.EMAIL_HOST_USER
+        send_mail(mail_subject, message, from_email, to_list, fail_silently=True)
+    return HttpResponse("Message Send Successfully!")
+
+
 def index(request):
     return render(request, 'index.html')
 
